@@ -9,7 +9,7 @@ function get_info() {
     var Date = document.getElementById("date_of_joining").value;
     var contact = document.getElementById("contact").value;
 
-    console.log(gender);
+    // console.log(name);
     var e_name = localStorage.setItem("name", name);
     var e_age = localStorage.setItem("age", age);
     var e_gender = localStorage.setItem("gender",gender);
