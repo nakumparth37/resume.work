@@ -6,86 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>employee details</title>
-    <style>
+    <link rel="stylesheet" href="style.css">
 
-    </style>
 </head>
 
 <body>
-    <form name="Employee_detials" onsubmit="return validateForm()">
+    <div class="container">
+        <form name="Employee_detials" onsubmit="return validateForm()" id="detailes_form">
 
-        <label for="Employee_Name"><b>Employee's Name :-</b> </label>
-        <input type="text" name="Employee_Name" placeholder="Enter your Name" id="E_Name"> <br>
+            <label for="Employee_Name"><b>Employee's Name :-</b> </label>
+            <input type="text" name="Employee_Name" placeholder="Enter your Name" id="E_Name"> <br>
 
-        <label for="Employee_Age"><b>Employee's Age :-</b> </label>
-        <input type="number" name="Employee_Age" placeholder="Enter your Age" id="E_age"><br>
+            <label for="Employee_Age"><b>Employee's Age :-</b> </label>
+            <input type="number" name="Employee_Age" placeholder="Enter your Age" id="E_age"><br>
 
-        <label for="Employee_Name"><b>Gender :-</b> </label>
-          <input type="radio" id="Employee_Gender" name="Employee_Gender" value="Male">
-          <label for="Employee_Gender">Male</label>
-          <input type="radio" id="Employee_Gender" name="Employee_Gender" value="Femela">
-          <label for="Employee_Gender">Female</label>
-          <input type="radio" id="Employee_Gender" name="Employee_Gender" value="Other">
-          <label for="Employee_Gender">Other</label><br>
+            <div id="gender">
+                <label for="Employee_Name"><b>Gender :-</b> </label>
+                  <input type="radio"  name="Employee_Gender" value="Male">Male
+                  <input type="radio"  name="Employee_Gender" value="Femela">Female
+                  <input type="radio"  name="Employee_Gender" value="Other">Other
+            </div>
 
-        <label for="Employee_designation"><b>Employee's designation:-</b> </label>
-        <select name="Employee_designation" id="designation">
-            <optgroup label="designation">
-                <option value="Select your designation">Select your designation</option>
-                <option value="Intern Software Developer">Intern Software Developer</option>
-                <option value="Junior Software Developer">Junior Software Developer</option>
-                <option value="Software Developer">Software Developer</option>
-                <option value="Software Engineer">Software Engineer</option>
-                <option value="Senior Software Engineer/Senior Software Developer">Senior Software Engineer/Senior
-                    Software Developer</option>
-                <option value="Principal Software Engineer">Principal Software Engineer</option>
-                <option value="Technical Lead/Engineering Lead/Team Lead">Technical Lead/Engineering Lead/Team Lead
-                </option>
-                <option value="Engineering Project Manager/Engineering Manager">Engineering Project Manager/Engineering
-                    Manager</option>
-                <option value="Software Architect">Software Architect</option>
-                <option value="Chief Architect">Chief Architect</option>
-                <option value="VP of Engineering/Director of Engineering">VP of Engineering/Director of Engineering
-                </option>
-                <option value="VP of Marketing">VP of Marketing</option>
-                <option value="Product Manager">Product Manager</option>
-            </optgroup>
-        </select><br>
 
-        <label for="Employee_Salary"><b>Salay :-</b></label>
-        <input type="number" name="Employee_Salary" placeholder="Enter your Salay" id="salary"><br>
+            <label for="Employee_designation"><b>Employee's designation:-</b> </label>
+            <select name="Employee_designation" id="designation">
+                <optgroup label="designation">
+                    <option value="Select your designation">Select your designation</option>
+                    <option value="Intern Software Developer">Intern Software Developer</option>
+                    <option value="Junior Software Developer">Junior Software Developer</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Senior Software Engineer/Senior Software Developer">Senior Software Engineer/Senior
+                        Software Developer</option>
+                    <option value="Principal Software Engineer">Principal Software Engineer</option>
+                    <option value="Technical Lead/Engineering Lead/Team Lead">Technical Lead/Engineering Lead/Team Lead
+                    </option>
+                    <option value="Engineering Project Manager/Engineering Manager">Engineering Project
+                        Manager/Engineering
+                        Manager</option>
+                    <option value="Software Architect">Software Architect</option>
+                    <option value="Chief Architect">Chief Architect</option>
+                    <option value="VP of Engineering/Director of Engineering">VP of Engineering/Director of Engineering
+                    </option>
+                    <option value="VP of Marketing">VP of Marketing</option>
+                    <option value="Product Manager">Product Manager</option>
+                </optgroup>
+            </select><br>
 
-        <label for="Employee_Location"><b>Location :-</b></label>
-        <input type="text" list="location_list" id="location">
-        <datalist id="location_list">
-            <option label="Ahemdabad" value="Ahemdabad"></option>
-            <option label="Jamngar" value="Jamngar"></option>
-            <option label="Surat" value="Surat"></option>
-            <option label="Gandhinager" value="Gandhinager"></option>
-            <option label="Junagdh" value="Junagdh"></option>
-            <option label="Rajkot" value="Rajkot"></option>
-        </datalist><br>
+            <label for="Employee_Salary"><b>Salay :-</b></label>
+            <input type="number" name="Employee_Salary" placeholder="Enter your Salay" id="salary"><br>
 
-        <label for="Employee_Email_ID"><b>Email ID :-</b></label>
-        <input type="email" name="Employee_Email" placeholder="Enter your Email" id="email_id"><br>
+            <label for="Employee_Location"><b>Location :-</b></label>
+            <input type="text" list="location_list" id="location" placeholder="Enter or select your location">
+            <datalist id="location_list">
+                <option label="Ahemdabad" value="Ahemdabad"></option>
+                <option label="Jamngar" value="Jamngar"></option>
+                <option label="Surat" value="Surat"></option>
+                <option label="Gandhinager" value="Gandhinager"></option>
+                <option label="Junagdh" value="Junagdh"></option>
+                <option label="Rajkot" value="Rajkot"></option>
+            </datalist><br>
 
-        <label for="Date_of_Joining"><b>Date of Joining :-</b></label>
-        <input type="date" name="Date_of_Joining" placeholder="Enter Date of Joining" id="date_of_joining"><br>
+            <label for="Employee_Email_ID"><b>Email ID :-</b></label>
+            <input type="email" name="Employee_Email" placeholder="Enter your Email" id="email_id"><br>
 
-        <label for="Contact_Number"><b>Contact Number:-</b></label>
-        <input type="number" name="Content" placeholder="Enter Date of Contact Number" id="contact"><br>
+            <label for="Date_of_Joining"><b>Date of Joining :-</b></label>
+            <input type="date" name="Date_of_Joining" placeholder="Enter Date of Joining" id="date_of_joining"><br>
 
-        <input type="submit" value="Submit" onclick="get_info()">
-        
+            <label for="Contact_Number"><b>Contact Number:-</b></label>
+            <input type="number" name="Content" placeholder="Enter Date of Contact Number" id="contact"><br>
 
-        
+            <input type="submit" value="Submit" onclick="get_info()" id="submit">
+
+
+
+    </div>
+
     </form>
 
-    <section id="Form_Data">
+    <!-- <section id="Form_Data">
         <b>No Infromestion is there!</b> 
-    </section>
+    </section> -->
     <script src="vaildastion.js"></script>
-    <script src="get_form_info.js"></script>
+    <!-- <script src="get_form_info.js"></script> -->
 
 </body>
 
