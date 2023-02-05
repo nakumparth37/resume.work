@@ -1,9 +1,93 @@
+body{
+  margin-left: 15rem;
+  margin-right:15rem ;
+  /* color: white; */
+  border: 3px solid royalblue;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
 
-/* For Education */
+
+h2{
+  background-color: blueviolet;
+  box-shadow: 5px 10px 10px #888888;
+  border-radius: 10px;
+  text-align: center;
+  color:white ;
+  padding: 5px;
+  
+}
+
+ul{
+  list-style-type: square;
+}
+
+.container{
+  /* border:2px solid red; */
+  /* background-color: rgb(210, 175, 241); */
+  display: flex;
+}
+
+#personl_info{
+  display:inline-grid;
+  width: 75%;
+  margin-right: 2rem;
+
+}
+
+#other_info{
+  display: inline;
+}
+
+.Name{
+  /* border: 2px solid black; */
+  /* background-color: rgb(210, 175, 241); */
+  font-size:x-large;
+  color: blueviolet;
+}
+
+.Name p {
+  font-size: large;
+}
+
+#about_me p{
+  text-align: justify;  
+}
+/* .skill{
+  background-color: azure;
+  margin-bottom: 5px;
+  margin-left:25px;
+} */
+
+.skill p{
+  /* background-color: azure; */
+  margin-bottom: 5px;
+  margin-left:25px;
+  text-align: justify;
+}
+
+.skill h3{
+  /* background-color: azure; */
+  margin-bottom: 5px;
+  margin-left:25px;
+}
+
+ 
+#contact p{
+  margin-left: 5px;
+  border: 2px solid blue;
+}
+
+
+
+
 table {
     font-family: arial, sans-serif;
     border:5px;
     width: 50%;
+    margin-bottom: 5px;
+    margin-left:25px;
   }
   
   td, th {

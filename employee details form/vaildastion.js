@@ -22,9 +22,9 @@ function validateForm() {
       alert("Location must be filled out or selected");
       return false;
     }
-    // else if (isNaN(location) == false) {
-    //   alert("Location  can't be number");
-    // }
+    else if (isNaN(location) == true) {
+      alert("Location  can't be number");
+    }
 
     let email = document.forms["Employee_detials"]["Employee_Email"].value;
     var petten = "^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$";
@@ -32,7 +32,7 @@ function validateForm() {
       alert("email must be filled out");
       return false;
     }
-    else if (match(petten) != email) {
+    else if (petten.match(email)) {
       alert("email must be in frometted");
     }
 
