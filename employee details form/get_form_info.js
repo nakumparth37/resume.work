@@ -1,6 +1,7 @@
 function get_info() {
     var name = document.getElementById("E_Name").value;
     var age = document.getElementById("E_age").value;
+    var gender = document.getElementsByName("Employee_Gender").value;
     var designation = document.getElementById("designation").value;
     var salary = document.getElementById("salary").value;
     var E_location = document.getElementById("location").value;
@@ -8,9 +9,10 @@ function get_info() {
     var Date = document.getElementById("date_of_joining").value;
     var contact = document.getElementById("contact").value;
 
-     console.log(E_location);
+    console.log(gender);
     var e_name = localStorage.setItem("name", name);
     var e_age = localStorage.setItem("age", age);
+    var e_gender = localStorage.setItem("gender",gender);
     var e_designation = localStorage.setItem("designation", designation);
     var e_salary = localStorage.setItem("salary", salary);
     var e_location = localStorage.setItem("E_location", E_location);
